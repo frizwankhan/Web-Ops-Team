@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+}
+body{
+
+    background-image: url(./images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    background-size: cover;
+    background-position: center; 
+}
+
+.container{
+    display: flex;
+    margin: 5% 10%;
+    justify-content: space-between;
+    
+    /* text-align: center; */
+}
+.introduction{
+   width: 45%;
+   color: white;
+}
+#h{
+    margin-top: 30%;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+}
+#p{
+    font-weight: lighter;
+}
+.right{
+    width: 45%;
+
+}
+.top{
+    text-align: center;
+    /* padding: 20px; */
+    height: 100px;
+    background-color:hsl(248, 32%, 49%);
+    margin-bottom: 50px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    box-shadow: 0 10px  #bb6363;
+}
+.top p{
+    margin: auto;
+    font-weight: lighter;
+}
+
+.right .form{
+    
+    background-color: white;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 10px  #bb6363;
+}
+
+.form #form{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#firstname{
+    height: 60px;
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 5px;
+    border-color: hsl(246, 25%, 77%);
+    font-size: 15px;
+}
+#lastname{
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 5px;
+    border-color: hsl(246, 25%, 77%);
+    font-size: 15px;
+}
+#email{
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 5px;
+    border-color: hsl(246, 25%, 77%);
+    font-size: 15px;
+}
+#password{
+    height: 50px;
+    margin-bottom: 50px;
+    padding: 25px;
+    border-radius: 5px;
+    border-color: hsl(246, 25%, 77%);
+    font-size: 15px;
+}
+#button{
+    height: 50px;
+    background-color: hsl(154, 59%, 51%);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+#button:hover{
+    background-color: hsl(154, 92%, 19%);
+}
+@media screen and (max-width:800px){
+    .container{
+        flex-direction: column;
+    }
+    .introduction{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+}
+
