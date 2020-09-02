@@ -1,0 +1,230 @@
+*{
+    box-sizing: border-box;
+    /* width: 100%;
+    height: 100%; */
+    padding: 0;
+    margin: 0;
+}
+body, HTML{
+    width: 100%;
+    height: 100%;
+   
+}
+.navbar{
+    background-color: rgb(237, 238, 237);
+    width: 100%;   
+}
+.navbar .container{
+    margin: 0 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-header{
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    padding: 10px;
+}
+.navbar-right{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar-right a{
+    padding-left: 20px;
+}
+.navbar-right .nav-link{
+    margin: auto;
+}
+.navbar-right .nav-link:hover{
+    color: #43c692;
+}
+.navbar-right .nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.middle{
+    text-align: center;
+    width: 80%;
+    margin: 10% 10%;
+}
+.middle .content{
+    font-size: 4em;
+}
+.middle button{
+    margin-top: 150px;
+    border: none;
+    background-color: white;
+    font-size: 1.5em;
+    background-color: #43c692;
+    padding: 2.5% 10%;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(129, 128, 128, 0.562);
+    cursor: pointer;
+}
+.body{
+    background-color: rgb(237, 238, 237);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body .q-and-a{
+    background-color: white;
+    width: 80%;
+    margin: 35px 0 ;
+    padding: 40px;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(129, 128, 128, 0.262);
+}
+.body #first-question{
+    margin-top: 90px;
+}
+.body .q-and-a:hover{
+    border: 3px solid rgb(33, 148, 241);
+
+}
+.question{
+    padding: 30px 0;
+    font-size: 2em;
+    
+}
+.question::before{
+    content: url(./icons8-help-96.png);
+    position: absolute;
+    left: -4.5%;
+    top: -15%;
+
+}
+.answer{
+    padding: 5px 50px;
+    font-size: 1.3em;
+}
+.answer label:hover{
+    color: rgb(33, 148, 241);
+}
+.answer label{
+    padding-left: 15px;
+}
+
+.bottom{
+    background-color: white;
+    text-align: center;
+}
+.bottom p{
+    margin-top: 100px;
+    font-size: 2em;
+}
+.bottom button{
+    margin: 50px 0;
+    border: none;
+    background-color: white;
+    font-size: 1.5em;
+    background-color: #43c692;
+    padding: 2.5% 10%;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(129, 128, 128, 0.562);
+    cursor: pointer;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+}
+.result{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    /* background-color: white; */
+    background-color: white;
+    padding: 20px;  
+    z-index: 10;
+    border-radius: 20px;
+    /* visibility: hidden; */
+}
+.result .header{
+    display: flex;
+    justify-content: space-between;
+}
+.result .header .title{
+    font-size: 2em;
+    padding-left: 40%;
+}
+.result .header button{
+    border: none;
+    background-color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header+p{
+    margin-top: 50px;
+    font-size: 1.5em;
+    padding: 5%;
+    text-align: center;
+}
+.result .go-back{
+    border: none;
+    background-color: white;
+    font-size: 1.5em;
+    background-color: #43c692;
+    padding: 2.5% 10%;
+    border-radius: 30px;
+    color: white;
+    box-shadow: 5px 5px 15px rgba(129, 128, 128, 0.562);
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+#go-back{
+    display: flex;
+    justify-content: center;
+}
+.closed{
+    display: none;
+}
+
+.testDetails p{
+    text-align: center;
+    font-size: 1.5em;
+}
+.testDetails{
+    padding-bottom: 25px;
+}
+
+.count-keeper{
+    background-color: #43c692;
+}
+.count-container{
+    width: 80%;
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5%;
+}
+.count-container p{
+    font-size: 1.5em;;
+}
+
+@media screen and (max-width:880px){
+    .count-container p{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:580px){
+    .count-container p{
+        font-size: 1em;
+    }
+    .middle .content{
+        font-size: 3.5em;
+    }
+}

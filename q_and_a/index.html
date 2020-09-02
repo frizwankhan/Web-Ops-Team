@@ -1,0 +1,159 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="function.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    
+
+</head>
+<body>
+    <nav class="navbar" >
+        <div class="container">
+            <div class="navbar-header">
+                Q&A
+            </div>
+            <div class="navbar-right">
+                <a href="#" class="nav-link">Login</a>
+                <a href="#" class="nav-link">Login</a>
+            </div>
+        </div>
+    </nav>
+    <div class="middle">
+        <div class="content">
+            Here is a website containing question and answer
+        </div>
+        <button>Attempt Paper</button>
+
+    </div>
+    <div class="count-keeper closed">
+        <div class="count-container">
+            <div class="count-left">
+                <p>Total Questions Answered: <span class="total-answered">0</span></p>
+            </div>
+            <div class="count-right">
+                <p>Total Questions Left: <span class="total-left">5</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="body closed" >
+        <div class="q-and-a" id="first-question">
+            <p class="q1 question">Which is the biggest Dam in the world?</p>
+            <div class="answer">
+                <input type="radio" id="three-gorges" name="dam">
+                <label for="three-gorges">The Three Gorges Dam</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="tarbela" name="dam">
+                <label for="tarbela">Tarbela Dam</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="mangla" name="dam">
+                <label for="mangla">Mangla Dam</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="hirakud" name="dam">
+                <label for="hirakud">Hirakud Dam</label>
+            </div>
+        </div>
+        <div class="q-and-a">
+            <p class="q2 question">which is the longest River in the World?</p>
+            <div class="answer">
+                <input type="radio" id="nile" name="river" value="nile">
+                <label for="nile">The Nile River</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="amazon" name="river" value="amazon">
+                <label for="amazon">The Amazon River</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="ganga" name="river" value="ganga">
+                <label for="ganga">Ganga River</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="mississppi" name="river" value="mississipi">
+                <label for="mississppi">Mississppi River</label>
+            </div>
+        </div>
+        <div class="q-and-a">
+            <p class="q3 question">Which is the building in the world?</p>
+            <div class="answer">
+                <input type="radio" id="burj" name="building">
+                <label for="burj">Burj Khalifa</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="shanghai" name="building">
+                <label for="shanghai">Shanghai Tower</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="twin" name="building">
+                <label for="twin">Twin Towers</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="makkah" name="building">
+                <label for="makkah">Makkah Tlock Tower</label>
+            </div>
+        </div>
+        <div class="q-and-a">
+            <p class="q4 question"> which is the biggest country in the world?</p>
+            <div class="answer">
+                <input type="radio" id="russia" name="country">
+                <label for="russia">Russia</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="india" name="country">
+                <label for="india">India</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="america" name="country">
+                <label for="america">America</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="china" name="country">
+                <label for="china">China</label>
+            </div>
+        </div>
+        <div class="q-and-a">
+            <p class="q5 question">which is the most populated country in the world?</p>
+            <div class="answer">
+                <input type="radio" id="india-population" name="population">
+                <label for="india-population">India</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="china-population" name="population">
+                <label for="china-population">China</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="australia-population" name="population">
+                <label for="australia-population">Australia</label>
+            </div>
+            <div class="answer" id="last-answer">
+                <input type="radio" id="america-population" name="population">
+                <label for="america-population">America</label>
+            </div>
+        </div>
+    </div>
+    <div class="bottom closed">
+        <p>If you have completed the paper please submit to check your grades</p>
+        <button>Submit Paper</button>
+    </div>
+    <div class="result closed">
+        <div class="header">
+            <div class="title">Result</div>
+            <button>&times;</button>
+        </div>
+        <p>Congratulations you have got <b><span id="score">1</span></b> correct out of 5 answers which is <b><span id="percentage">100</span>%</b> of total marks.</p>
+        <div class="testDetails">
+            <p>Total questions answered : <b><span class="totalAnswered">2</span></b></p>
+            <p>Total wrong answers : <b><span class="totalWrong">2</span></b></p>
+            <p>Total correct answers : <b><span class="totalCorrect">2</span></b></p>
+        </div>
+        <div id="go-back"><button class="go-back">Click here to attempt again</button></div>
+    </div>
+    <div class="overlay closed">
+
+    </div>
+</body>
+</html>
